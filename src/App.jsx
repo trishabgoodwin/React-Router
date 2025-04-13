@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Green from './Components/Green';
 import Purple from './Components/Purple';
 import Footer from './Components/Footer';
+import Nav from './Components/Nav';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,13 +16,7 @@ function App() {
     <>
     <div id="container">
       <div id="navbar">
-        <nav>
-          <Link to="/">Home  </Link>
-          <Link to="/blue">Blue  </Link>
-          <Link to="/red">Red  </Link>
-          <Link to="/green">Green  </Link>
-          <Link to="/purple">Purple  </Link>
-        </nav>
+        <Nav />
       </div>
       <div id="main-section">
         <Routes>
@@ -33,9 +28,9 @@ function App() {
         </Routes>
       </div>
       <div>
-        <Footer />
+         <Footer />
       </div>
-    </div>
+    </div> 
     </>
   )
 }
